@@ -10,5 +10,5 @@ class InvoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Invoice
         fields = '__all__'
-
+        
     invoice_detail = InvoiceDetailSerializer(many=True,read_only=True)
